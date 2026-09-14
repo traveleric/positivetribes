@@ -1,0 +1,12 @@
+# Exclude internal files from static website uploads.
+.git/
+.github/
+.wrangler/
+node_modules/
+.env*
+.gitignore
+.assetsignore
+wrangler.json
+wrangler.jsonc
+wrangler.toml
+README.md
