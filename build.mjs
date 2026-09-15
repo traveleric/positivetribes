@@ -1,0 +1,16 @@
+import { mkdir, copyFile, writeFile } from 'node:fs/promises';
+const recipient = process.env.CONTACT_TO;
+if (!recipient || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recipient)) throw new Error('Set CONTACT_TO to the verified email destination in Cloudflare build variables.');
+await mkdir('public', { recursive: true });
+await copyFile('index.html', 'public/index.html');
+await writeFile('wrangler.json', JSON.stringify({
+  name: 'positivetribes',
+  main: 'contact-worker.mjs',
+  compatibility_date: '2026-09-11',
+  assets: { directory: './public', binding: 'ASSETS' },
+  observability: { enabled: true },
+  vars: { CONTACT_TO: recipient },
+  send_email: [{ name: 'CONTACT_MAIL', destination_address: recipient }],
+  ratelimits: [{ name: 'CONTACT_LIMIT', namespace_id: '914202601', simple: { limit: 5, period: 60 } }]
+}, null, 2));
+console.log('Prepared website assets and contact form configuration.');
