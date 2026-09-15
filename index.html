@@ -16,12 +16,14 @@
 :root{--paper:#f5f3eb;--ink:#273e35;--muted:#59665e;--line:#d8dcd0;--rust:#a8492c;--sage:#a7b79a;--peach:#e9b28e}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}a:focus-visible{outline:3px solid var(--rust);outline-offset:6px}.wrap{width:min(1240px,calc(100% - 112px));margin:auto}.skip{position:absolute;left:20px;top:-80px;padding:12px;background:var(--ink);color:white;z-index:5}.skip:focus{top:16px}header{height:120px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.brand{text-decoration:none;display:flex;align-items:center;gap:14px;font-size:21px;font-weight:700;letter-spacing:-.7px}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:32px;font-weight:400;line-height:1}.nav-contact{font-size:14px;text-decoration:none;border-bottom:1px solid var(--ink);padding:9px 0}.nav-contact span{margin-left:20px}.hero{display:grid;grid-template-columns:1.13fr 1fr;gap:50px;align-items:center;padding:94px 0 90px}.eyebrow{font-size:11px;letter-spacing:2.1px;font-weight:700;text-transform:uppercase;display:flex;align-items:center;gap:10px;margin:0 0 28px}.dot{width:7px;height:7px;background:var(--rust);border-radius:50%}h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(52px,5.9vw,84px);line-height:1.02;font-weight:400;letter-spacing:-3.8px;margin:0 0 28px}h1 em{font-weight:400;color:var(--rust)}.intro{max-width:450px;font-size:17px;line-height:1.75;color:var(--muted);margin:0 0 31px}.cta{display:inline-flex;gap:30px;align-items:center;padding:18px 24px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:600;text-decoration:none;border-radius:4px;transition:background .2s,transform .2s}.cta:hover{background:#3e5c4c;transform:translateY(-2px)}.subnote{font-size:12px;color:var(--muted);margin:16px 0 0}.art{position:relative;aspect-ratio:1/1.04;background:#e9ecdf;border-radius:48% 48% 5px 5px;overflow:hidden;isolation:isolate}.orbit{position:absolute;width:77%;height:74%;border:1px solid #88967b;border-radius:50%;left:12%;top:14%;transform:rotate(-28deg)}.orbit.two{width:95%;height:52%;top:25%;left:2%;transform:rotate(35deg);opacity:.45}.petal{position:absolute;width:36%;height:36%;border-radius:50%;mix-blend-mode:multiply}.p1{background:#a5b497;left:17%;top:17%;border-radius:50% 50% 8% 50%}.p2{background:#e5ac88;right:17%;top:17%;border-radius:50% 50% 50% 8%}.p3{background:#c4cdaa;left:17%;bottom:17%;border-radius:50% 8% 50% 50%}.p4{background:#4d6a54;right:17%;bottom:17%;border-radius:8% 50% 50% 50%}.center{position:absolute;width:13%;height:13%;border-radius:50%;background:var(--paper);left:43.5%;top:43.5%;box-shadow:0 0 0 10px #e9ecdf}.spark{position:absolute;right:13%;top:10%;font-family:Georgia,serif;font-size:47px;color:var(--rust);font-weight:400}.art-label{position:absolute;bottom:6%;left:0;width:100%;text-align:center;font-size:10px;letter-spacing:2.2px;text-transform:uppercase}.chapter{border-top:1px solid var(--line);padding:48px 0 54px;display:grid;grid-template-columns:1fr 2.05fr;gap:50px}.chapter h2{font-family:Georgia,serif;font-size:29px;font-weight:400;line-height:1.2;letter-spacing:-.7px;margin:0}.chapter p{font-size:16px;line-height:1.8;margin:0;max-width:700px;color:var(--muted)}.values{display:flex;gap:26px;margin-top:24px;flex-wrap:wrap}.values span{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;font-weight:600}.values span:before{content:'+';color:var(--rust);margin-right:9px;font-size:15px}footer{border-top:1px solid var(--line);padding:26px 0 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px;color:var(--muted)}footer a{text-underline-offset:4px}.footer-note{display:flex;gap:22px}.footer-note span:first-child{color:var(--ink);font-weight:600}
 @media(min-width:1500px){.hero{padding:100px 0}.art{max-height:540px}}@media(max-width:900px){.wrap{width:calc(100% - 64px)}.hero{gap:30px;padding:65px 0}h1{font-size:62px}.intro{font-size:16px}.chapter{gap:30px;grid-template-columns:1fr 1.6fr}}@media(max-width:650px){.wrap{width:calc(100% - 40px)}header{height:88px}.brand{font-size:19px;gap:10px}.mark{width:32px;height:32px;font-size:28px}.nav-contact{font-size:12px}.nav-contact span{margin-left:9px}.hero{grid-template-columns:1fr;gap:42px;padding:50px 0 42px}h1{font-size:clamp(48px,12vw,68px);letter-spacing:-2.5px;max-width:480px}.eyebrow{font-size:10px;margin-bottom:22px}.intro{max-width:430px}.art{aspect-ratio:1.12;max-width:460px;width:100%;margin:auto}.chapter{grid-template-columns:1fr;gap:20px;padding:34px 0}.chapter h2{font-size:28px}.chapter p{font-size:15px}.values{gap:17px}.values span{font-size:10px;letter-spacing:1px}footer{align-items:flex-start;flex-direction:column;gap:16px}.footer-note{flex-wrap:wrap;gap:12px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}.cta:hover{transform:none}}
+
+button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--rust);outline-offset:4px}.nav-contact{background:none;color:var(--ink);border:0;border-bottom:1px solid var(--ink)}dialog{width:min(540px,calc(100% - 32px));max-height:calc(100dvh - 32px);margin:auto;padding:38px;border:1px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);box-shadow:0 24px 100px #142c3540}dialog::backdrop{background:#203c33a6;backdrop-filter:blur(4px)}.contact-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}.contact-top h2{font:400 40px/1.1 Georgia,serif;letter-spacing:-1px;margin:0}.contact-close{border:1px solid var(--line);border-radius:50%;width:36px;height:36px;background:transparent;color:var(--ink);font-size:25px;line-height:1;flex-shrink:0}.contact-description{font-size:15px;line-height:1.6;color:var(--muted);margin:17px 0 24px}.contact-fields{border:0;padding:0;margin:0;min-width:0}.contact-fields label{display:block;font-size:13px;font-weight:600;margin-bottom:8px}.contact-fields input,.contact-fields textarea{width:100%;border:1px solid #aab6a8;border-radius:5px;padding:12px 13px;color:var(--ink);background:#fffdf8;font-size:16px;margin-bottom:19px}.contact-fields textarea{resize:vertical;min-height:125px}.contact-fields .cta{border:0;width:100%;justify-content:space-between}.contact-fields:disabled{opacity:.65}.contact-help{font-size:12px;color:var(--muted);line-height:1.6;margin:15px 0 0}.contact-help a{text-underline-offset:3px}.contact-status{font-size:14px;line-height:1.6;margin:16px 0 0}.contact-status:empty{display:none}.contact-status[data-error="true"]{color:#9a3322}.contact-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}@media(max-width:650px){dialog{padding:25px}.contact-top h2{font-size:34px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
-<header><a class="brand" href="/" aria-label="Positive Tribes home"><span class="mark" aria-hidden="true">+</span>Positive Tribes</a><a class="nav-contact" href="mailto:hello@positivetribes.org">Say hello <span aria-hidden="true">↗</span></a></header>
+<header><a class="brand" href="/" aria-label="Positive Tribes home"><span class="mark" aria-hidden="true">+</span>Positive Tribes</a><a class="nav-contact" id="contact-open" href="mailto:hello@positivetribes.org" aria-haspopup="dialog">Contact us <span aria-hidden="true">↗</span></a></header>
 <main id="main">
 <section class="hero" aria-labelledby="hero-title">
 <div><p class="eyebrow"><span class="dot" aria-hidden="true"></span>A new chapter is beginning</p><h1 id="hero-title">Something<br><em>good</em> is<br>taking shape.</h1><p class="intro">Positive Tribes is evolving. We're exploring new ways to bring people together, strengthen community, and do good locally.</p><a class="cta" href="mailto:hello@positivetribes.org">Join the conversation <span aria-hidden="true">↗</span></a><p class="subnote">A thought, an idea, or just a hello. We'd love to hear from you.</p></div>
@@ -31,5 +33,52 @@
 </main>
 <footer><div class="footer-note"><span>© 2026 Positive Tribes</span><span>A new chapter. A shared possibility.</span></div><a href="mailto:hello@positivetribes.org">hello@positivetribes.org</a></footer>
 </div>
+
+<dialog id="contact-dialog" aria-labelledby="contact-title" aria-describedby="contact-description">
+<div class="contact-top"><h2 id="contact-title">Contact us</h2><button class="contact-close" type="button" aria-label="Close contact form">×</button></div>
+<p class="contact-description" id="contact-description">An idea, a question, or just a hello. We'd love to hear from you.</p>
+<form id="contact-form">
+<fieldset class="contact-fields">
+<label for="contact-name">Your name</label><input id="contact-name" name="name" autocomplete="name" required maxlength="100">
+<label for="contact-email">Email address</label><input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254">
+<label for="contact-message">Your message</label><textarea id="contact-message" name="message" required minlength="10" maxlength="5000" rows="4"></textarea>
+<div class="contact-trap" aria-hidden="true"><label for="contact-website">Leave this field empty</label><input id="contact-website" name="website" tabindex="-1" autocomplete="off"></div>
+<button class="cta" type="submit"><span id="contact-send-label">Send message</span><span aria-hidden="true">↗</span></button>
+</fieldset>
+<p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+<p class="contact-help">Your details will only be used to respond to your message.<br>Prefer email? <a href="mailto:hello@positivetribes.org">hello@positivetribes.org</a></p>
+</form>
+</dialog>
+<script>
+const contactDialog = document.querySelector('#contact-dialog');
+const contactForm = document.querySelector('#contact-form');
+const contactStatus = document.querySelector('#contact-status');
+const contactFields = contactForm.querySelector('fieldset');
+const sendLabel = document.querySelector('#contact-send-label');
+document.querySelector('#contact-open').addEventListener('click', (event) => { event.preventDefault(); contactDialog.showModal(); });
+document.querySelector('.contact-close').addEventListener('click', () => contactDialog.close());
+contactForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  if (contactFields.disabled) return;
+  const data = Object.fromEntries(new FormData(contactForm));
+  contactStatus.textContent = '';
+  contactStatus.dataset.error = 'false';
+  contactFields.disabled = true;
+  sendLabel.textContent = 'Sending…';
+  try {
+    const response = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+    const result = await response.json();
+    if (!response.ok || !result.ok) throw new Error(result.error || 'We could not confirm your message was sent. Please try again or email us directly.');
+    contactForm.reset();
+    contactStatus.textContent = 'Thank you! Your message has been sent. We look forward to connecting.';
+  } catch (error) {
+    contactStatus.dataset.error = 'true';
+    contactStatus.textContent = error.message === 'Failed to fetch' ? 'We could not confirm your message was sent. Please check your connection or email us directly.' : error.message;
+  } finally {
+    contactFields.disabled = false;
+    sendLabel.textContent = 'Send message';
+  }
+});
+</script>
 </body>
 </html>
