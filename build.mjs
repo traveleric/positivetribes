@@ -5,6 +5,9 @@ if (!recipient || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recipient)) throw new Error
 
 await mkdir('public', { recursive: true });
 await copyFile('index.html', 'public/index.html');
+for (const screen of ['workouts', 'training-frequency', 'blood-pressure', 'medicine-tracker']) {
+  await copyFile(`pulselift-${screen}.png`, `public/pulselift-${screen}.png`);
+}
 await copyFile('positive-tribes-community.jpg', 'public/positive-tribes-community.jpg');
 await writeFile('wrangler.json', JSON.stringify({
   name: 'positivetribes', main: 'contact-worker.mjs', compatibility_date: '2026-09-11',
