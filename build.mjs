@@ -5,6 +5,9 @@ if (!recipient || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recipient)) throw new Error
 
 await mkdir('public', { recursive: true });
 await copyFile('index.html', 'public/index.html');
+for (const page of ['about.html', 'projects.html', 'contact.html']) {
+  await copyFile(page, `public/${page}`);
+}
 for (const screen of ['workouts', 'training-frequency', 'blood-pressure', 'medicine-tracker']) {
   await copyFile(`pulselift-${screen}.png`, `public/pulselift-${screen}.png`);
 }
